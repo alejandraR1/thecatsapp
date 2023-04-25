@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="The_Cats" customModuleProvider="target">
+            <connections>
+                <outlet property="tableCats" destination="yZr-kV-3yv" id="KPd-NA-Z6l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Cats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-AY-GTl">
+                    <rect key="frame" x="121.5" y="39" width="132.5" height="36.5"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
+                    <color key="textColor" red="0.54901960780000003" green="0.30980392159999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yZr-kV-3yv">
+                    <rect key="frame" x="9.5" y="85.5" width="356" height="581.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uck-qI-Cwi"/>
+                        <outlet property="delegate" destination="-1" id="dT0-NN-0jF"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vBp-AY-GTl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="39" id="2Mc-WZ-vBd"/>
+                <constraint firstItem="yZr-kV-3yv" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.95" id="AkJ-fh-khN"/>
+                <constraint firstItem="vBp-AY-GTl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="R7e-8C-707"/>
+                <constraint firstItem="yZr-kV-3yv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aYq-ld-Fun"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yZr-kV-3yv" secondAttribute="bottom" id="kZe-Sg-j8x"/>
+                <constraint firstItem="yZr-kV-3yv" firstAttribute="top" secondItem="vBp-AY-GTl" secondAttribute="bottom" constant="10" id="xwa-q0-tAB"/>
+            </constraints>
+            <point key="canvasLocation" x="48" y="21"/>
+        </view>
+    </objects>
+</document>
